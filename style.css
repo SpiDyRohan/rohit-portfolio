@@ -111,6 +111,8 @@ body {
 .project-card {
   max-width: 600px;
   margin: auto;
+  margin-top: 1%;
+
 }
 
 .contact-section {

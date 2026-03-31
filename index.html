@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rohit Ayre | Flutter Developer</title>
+<title>Rohit Ayre | Mobile App Developer</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -12,7 +12,7 @@
 <body>
 
 <nav class="navbar">
-  <div class="logo">Rohit.</div>
+  <div class="logo">Rohit Ayre</div>
   <ul>
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
@@ -24,7 +24,7 @@
 <section class="hero">
   <div class="hero-content fade-in">
     <h1>Rohit Ayre</h1>
-    <h2>Flutter & Android Developer</h2>
+    <h2>Mobile Application Developer</h2>
     <p>I build scalable, production-ready mobile applications for startups and businesses.</p>
     <div class="hero-buttons">
       <a href="#contact" class="btn-primary">Hire Me</a>
@@ -58,14 +58,20 @@
   <div class="project-card glass-card">
     <h4>OnDoor Grocery App</h4>
     <p>Full Flutter app using BLoC architecture with scalable backend integration.</p>
-    <a href="#" class="project-link">View Project</a>
+    <a href="https://play.google.com/store/apps/details?id=com.ondoor.app&pcampaignid=web_share" target="_blank">View Project</a>
+  </div>
+    <div class="project-card glass-card">
+    <h4>T3000</h4>
+    <p>Full Flutter app using GetX State Management with scalable BLE Integration.</p>
+<a href="https://play.google.com/store/apps/details?id=aero.microair.t3000app&pcampaignid=web_share" target="_blank">View Project</a>
   </div>
 </section>
 
 <section id="contact" class="section contact-section">
   <h3>Let's Work Together</h3>
-  <p>Email: rohitayre876@gmail.com</p>
-  <p>Available for freelance (4 hrs/week)</p>
+  <p>Email: <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="rohitayre876@gmail.com" rel="noopener noreferrer">rohitayre876@gmail.com</a></p>
+  <p>Mobile: <a href="tel:+916266638953">+91-6266638953</a></p>
+  <p>Available for freelance (4 hrs/day)</p>
 </section>
 
 <footer>
@@ -73,5 +79,157 @@
 </footer>
 
 <script src="script.js"></script>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Rohit Ayre | Mobile App Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Poppins',sans-serif;
+  color:#fff;
+  background: radial-gradient(circle at top right,#0ea5e9 0%,#0f172a 35%,#020617 100%);
+}
+.navbar{
+  position:fixed;top:0;width:100%;z-index:1000;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:18px 8%;
+  backdrop-filter:blur(16px);
+  background:rgba(15,23,42,.45);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.logo{font-size:1.2rem;font-weight:700}
+.navbar ul{display:flex;gap:30px;list-style:none}
+.navbar a{color:#fff;text-decoration:none;font-weight:500}
+.hero{
+  min-height:100vh;
+  display:flex;align-items:center;justify-content:center;
+  text-align:center;padding:120px 8% 60px;
+}
+.hero-box{
+  max-width:900px;
+  padding:60px;
+  border-radius:28px;
+  background:rgba(255,255,255,.08);
+  backdrop-filter:blur(20px);
+  box-shadow:0 20px 80px rgba(14,165,233,.18);
+  border:1px solid rgba(255,255,255,.08);
+}
+.hero h1{font-size:4rem;font-weight:800}
+.hero h2{margin:16px 0;color:#cbd5e1;font-weight:400}
+.hero p{font-size:1.1rem;line-height:1.8;color:#e2e8f0}
+.hero-buttons{margin-top:30px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.btn{padding:14px 28px;border-radius:999px;text-decoration:none;font-weight:600;transition:.3s}
+.btn-primary{background:#38bdf8;color:#0f172a}
+.btn-outline{border:1px solid rgba(255,255,255,.25);color:#fff}
+.btn:hover{transform:translateY(-3px)}
+.section{padding:100px 8%}
+.section h3{text-align:center;font-size:2.2rem;margin-bottom:50px}
+.about-card,.contact-card,.project-card,.glass-card{
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.08);
+  backdrop-filter:blur(14px);
+  border-radius:24px;
+  box-shadow:0 10px 40px rgba(0,0,0,.25);
+}
+.about-card,.contact-card{padding:40px;text-align:center;max-width:900px;margin:auto}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:24px;
+}
+.glass-card{
+  padding:28px;
+  text-align:center;
+  transition:.3s;
+}
+.glass-card:hover,.project-card:hover{transform:translateY(-8px)}
+.projects-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:24px;
+}
+.project-card{padding:30px}
+.project-card h4{font-size:1.4rem;margin-bottom:12px}
+.project-card p{color:#cbd5e1;line-height:1.7;margin-bottom:20px}
+.project-card a{color:#38bdf8;text-decoration:none;font-weight:600}
+.contact-card p{margin:14px 0}
+footer{text-align:center;padding:24px;background:rgba(0,0,0,.35)}
+@media(max-width:768px){
+  .navbar ul{display:none}
+  .hero h1{font-size:2.6rem}
+  .hero-box{padding:36px 24px}
+}
+</style>
+</head>
+<body>
+<nav class="navbar">
+  <div class="logo">Rohit Ayre</div>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+<section class="hero">
+  <div class="hero-box">
+    <h1>Rohit Ayre</h1>
+    <h2>Mobile Application Developer</h2>
+    <p>I build scalable, production-ready mobile applications for startups and businesses.</p>
+    <div class="hero-buttons">
+      <a href="#contact" class="btn btn-primary">Hire Me</a>
+      <a href="resume.pdf" class="btn btn-outline">Download Resume</a>
+    </div>
+  </div>
+</section>
+<section id="about" class="section">
+  <h3>About Me</h3>
+  <div class="about-card">
+    <p>4+ years experience building Flutter & Android applications with scalable architecture, REST API integration, Firebase backend, and BLoC state management.</p>
+  </div>
+</section>
+<section id="services" class="section">
+  <h3>Services</h3>
+  <div class="grid">
+    <div class="glass-card">Flutter App Development</div>
+    <div class="glass-card">Firebase Integration</div>
+    <div class="glass-card">API Integration</div>
+    <div class="glass-card">UI Implementation</div>
+    <div class="glass-card">Bug Fixing</div>
+    <div class="glass-card">App Deployment</div>
+  </div>
+</section>
+<section id="projects" class="section">
+  <h3>Featured Projects</h3>
+  <div class="projects-grid">
+    <div class="project-card">
+      <h4>OnDoor Grocery App</h4>
+      <p>Full Flutter app using BLoC architecture with scalable backend integration.</p>
+      <a href="https://play.google.com/store/apps/details?id=com.ondoor.app&pcampaignid=web_share" target="_blank">View Project</a>
+    </div>
+    <div class="project-card">
+      <h4>T3000</h4>
+      <p>Full Flutter app using GetX state management with scalable BLE integration.</p>
+      <a href="https://play.google.com/store/apps/details?id=aero.microair.t3000app&pcampaignid=web_share" target="_blank">View Project</a>
+    </div>
+  </div>
+</section>
+<section id="contact" class="section">
+  <h3>Let's Work Together</h3>
+  <div class="contact-card">
+    <p>Email: rohitayre876@gmail.com</p>
+    <p>Mobile: +91-6266638953</p>
+    <p>Available for freelance (4 hrs/day)</p>
+  </div>
+</section>
+<footer>© 2026 Rohit Ayre | Flutter Developer</footer>
 </body>
 </html>
